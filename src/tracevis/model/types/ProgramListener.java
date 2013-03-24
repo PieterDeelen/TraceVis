@@ -19,29 +19,29 @@ public interface ProgramListener extends EventListener {
 	/**
 	 * Indicates that the trace has been loaded.
 	 */
-	public void traceLoaded();
+	void traceLoaded();
 
 	/**
 	 * Indicates that the trace has been filtered.
 	 */
-	public void traceFiltered();
+	void traceFiltered();
 
 	/**
 	 * Indicates that the current time has changed.
 	 */
-	public void timeChanged();
+	void timeChanged();
 
 	/**
 	 * Indicates that a method has been entered.
 	 * @param caller the ClassData of the calling class.
 	 * @param callee the ClassData of the called class.
 	 */
-	public void methodEntered(ClassData caller, ClassData callee);
+	void methodEntered(ClassData caller, ClassData callee);
 
 	/**
 	 * Indicates that a method has been exited.
 	 * @param caller the ClassData of the calling class.
 	 * @param callee the ClassData of the called class.
 	 */
-	public void methodExited(ClassData caller, ClassData callee);
+	void methodExited(ClassData caller, ClassData callee);
 }

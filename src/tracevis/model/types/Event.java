@@ -16,9 +16,9 @@ public interface Event {
 	/**
 	 * Returns the time the event occurred.
 	 */
-	public long getTime();
+	long getTime();
 
-	public void setFiltered(boolean filtered);
+	void setFiltered(boolean filtered);
 
-	public boolean isFiltered();
+	boolean isFiltered();
 }

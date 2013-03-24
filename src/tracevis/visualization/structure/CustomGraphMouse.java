@@ -17,7 +17,6 @@ import java.awt.geom.Point2D;
 
 import javax.swing.SwingUtilities;
 
-import tracevis.model.Program;
 import tracevis.model.types.ClassData;
 import tracevis.visualization.utilities.BrushState;
 import edu.uci.ics.jung.graph.Edge;

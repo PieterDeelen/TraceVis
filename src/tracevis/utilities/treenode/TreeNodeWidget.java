@@ -17,8 +17,8 @@ import javax.swing.JTree;
  * @author Huub van de Wetering
  */
 public interface TreeNodeWidget<Value> {
-    public void setValue(Value v);
-    public Value getValue();
+    void setValue(Value v);
+    Value getValue();
     Component getTreeCellEditorComponent(JTree tree, Object value,
 					 boolean isSelected, boolean expanded,
 					 boolean leaf, int row);

@@ -9,21 +9,21 @@ import edu.uci.ics.jung.graph.Graph;
 
 public interface ProgramInterface {
 
-	public abstract Graph getCallGraph();
+	Graph getCallGraph();
 
 	/*
 	 * Accessors.
 	 */
-	public abstract CallStack getCallStack(long threadID);
+	CallStack getCallStack(long threadID);
 
-	public abstract Set<Long> getActiveThreads();
+	Set<Long> getActiveThreads();
 
-	public abstract ClassData getCaller(Event event);
+	ClassData getCaller(Event event);
 
-	public abstract ClassData getCallee(Event event);
+	ClassData getCallee(Event event);
 
-	public abstract ClassData getClassData(String className);
+	ClassData getClassData(String className);
 
-	public abstract boolean getHideInnerClasses();
+	boolean getHideInnerClasses();
 
 }

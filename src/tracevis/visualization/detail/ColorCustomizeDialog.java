@@ -21,7 +21,6 @@ import javax.swing.AbstractButton;
 import javax.swing.JLabel;
 import javax.swing.JRadioButton;
 
-import tracevis.model.Program;
 import tracevis.model.types.ClassData;
 import tracevis.utilities.StringUtils;
 import tracevis.visualization.utilities.ColorModel;

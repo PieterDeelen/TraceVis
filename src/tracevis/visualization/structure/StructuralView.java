@@ -25,7 +25,6 @@ import javax.swing.UIManager;
 import tracevis.model.Program;
 import tracevis.model.types.ClassData;
 import tracevis.model.types.ProgramListener;
-import tracevis.visualization.ProgramView;
 import tracevis.visualization.functions.CallsReceivedVertexSizeFunction;
 import tracevis.visualization.functions.CallsSentVertexSizeFunction;
 import tracevis.visualization.functions.InstanceVertexSizeFunction;

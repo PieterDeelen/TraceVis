@@ -22,7 +22,7 @@ public interface BrushState {
 	 * @param v the specified vertex. Pass null instead of an actual vertex to
 	 *        set all vertices to unbrushed.
 	 */
-	public void setBrushed(ArchetypeVertex v);
+	void setBrushed(ArchetypeVertex v);
 
 	/**
 	 * Sets the state of the specified edge to brushed and the state of all
@@ -30,17 +30,17 @@ public interface BrushState {
 	 * @param e the specified edge. Pass null instead of an actual edge to
 	 *        set all edges to unbrushed.
 	 */
-	public void setBrushed(ArchetypeEdge e);
+	void setBrushed(ArchetypeEdge e);
 
 	/**
 	 * Returns whether the specified vertex is brushed.
 	 * @param v the specified vertex.
 	 */
-	public boolean isBrushed(ArchetypeVertex v);
+	boolean isBrushed(ArchetypeVertex v);
 
 	/**
 	 * Returns whether the specified edge is brushed.
 	 * @param e the specified edge.
 	 */
-	public boolean isBrushed(ArchetypeEdge e);
+	boolean isBrushed(ArchetypeEdge e);
 }

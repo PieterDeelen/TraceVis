@@ -13,7 +13,6 @@ import java.nio.ByteBuffer;
 import java.util.List;
 import java.util.ListIterator;
 
-import tracevis.model.Program;
 import tracevis.model.types.ClassData;
 import tracevis.model.types.Range;
 import edu.uci.ics.jung.graph.Vertex;

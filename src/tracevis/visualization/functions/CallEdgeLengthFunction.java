@@ -8,7 +8,6 @@
 
 package tracevis.visualization.functions;
 
-import tracevis.model.Program;
 import tracevis.model.types.CallData;
 import edu.uci.ics.jung.graph.Edge;
 import edu.uci.ics.jung.visualization.SpringLayout;

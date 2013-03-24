@@ -11,7 +11,6 @@ package tracevis.visualization.structure;
 import java.awt.event.MouseEvent;
 import java.awt.geom.Point2D;
 
-import tracevis.model.Program;
 import tracevis.model.types.CallData;
 import tracevis.model.types.ClassData;
 import edu.uci.ics.jung.graph.Edge;

@@ -8,7 +8,6 @@
 
 package tracevis.visualization.functions;
 
-import tracevis.model.Program;
 import tracevis.model.types.ClassData;
 import edu.uci.ics.jung.graph.Vertex;
 

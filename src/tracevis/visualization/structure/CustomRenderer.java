@@ -29,7 +29,6 @@ import tracevis.model.types.CallData;
 import tracevis.model.types.ClassData;
 import tracevis.utilities.ColorUtils;
 import tracevis.utilities.MathUtils;
-import tracevis.visualization.ProgramView;
 import tracevis.visualization.functions.VertexSizeFunction;
 import edu.uci.ics.jung.graph.ArchetypeVertex;
 import edu.uci.ics.jung.graph.DirectedEdge;

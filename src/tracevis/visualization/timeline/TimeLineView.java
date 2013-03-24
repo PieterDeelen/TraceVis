@@ -48,7 +48,6 @@ import tracevis.model.types.MethodExitEvent;
 import tracevis.model.types.ProgramListener;
 import tracevis.model.types.Range;
 import tracevis.model.types.TimeFunction;
-import tracevis.visualization.ProgramView;
 import tracevis.visualization.structure.VertexData;
 import tracevis.visualization.utilities.BrushEventListener;
 import tracevis.visualization.utilities.BrushMultiPickedState;
