@@ -8,7 +8,12 @@
 
 package tracevis.utilities;
 
+import java.util.Arrays;
+
+import org.junit.Assert;
 import org.junit.Test;
+
+import tracevis.utilities.BinarySearch.Condition;
 
 /**
  *
@@ -18,7 +23,14 @@ public class BinarySearchTest {
 
   @Test
   public void test() {
-    //Assert.fail();
+	  Condition condition = new BinarySearch.Condition() {		
+		@Override
+		public boolean isTrue(Object o) {
+			Integer integer = (Integer)o;
+			return integer.intValue() == 1;		
+		}
+	  };
+	  Assert.assertEquals(0, BinarySearch.search(Arrays.asList(1), condition));
   }
 
 }
