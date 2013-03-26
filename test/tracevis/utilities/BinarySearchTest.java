@@ -31,6 +31,7 @@ public class BinarySearchTest {
 	  };
 	  
 	  Assert.assertEquals(-1, BinarySearch.search(Collections.emptyList(), condition));
+	  Assert.assertEquals(-1, BinarySearch.search(Arrays.asList(2), condition));
 	  Assert.assertEquals(0, BinarySearch.search(Arrays.asList(0), condition));
 	  Assert.assertEquals(0, BinarySearch.search(Arrays.asList(1), condition));	  
 	  Assert.assertEquals(1, BinarySearch.search(Arrays.asList(0, 1), condition));
