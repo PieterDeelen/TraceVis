@@ -5,18 +5,17 @@
 <project name="tracevis" default="default" basedir=".">
     <description>Builds, tests, and runs the project tracevis.</description>
 	
-	<property name="cobertura.dir" value="/home/pieter/workspaces/sonar/cobertura-1.9.4.1" />
+	<property name="cobertura.dir" value="libs" />
 
 	<path id="cobertura.classpath">
 	    <fileset dir="${cobertura.dir}">
 	        <include name="cobertura.jar" />
-	        <include name="lib/**/*.jar" />
+	        <include name="*.jar" />
 	    </fileset>
 	</path>
 
 	<taskdef classpathref="cobertura.classpath" resource="tasks.properties" />		
-	
-	
+		
     <import file="nbproject/build-impl.xml"/>
     <!--
 
