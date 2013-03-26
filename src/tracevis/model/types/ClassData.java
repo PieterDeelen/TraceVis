@@ -13,7 +13,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import tracevis.utilities.BinarySearch;
-import tracevis.utilities.BinarySearch.Condition;
+import tracevis.utilities.Condition;
 import edu.uci.ics.jung.graph.Edge;
 import edu.uci.ics.jung.graph.Vertex;
 

@@ -22,7 +22,7 @@ public class BinarySearchTest {
 
   @Test
   public void test() {
-	  BinarySearch.Condition condition = new BinarySearch.Condition() {		
+	  Condition condition = new Condition() {		
 		@Override
 		public boolean isTrue(Object o) {
 			Integer integer = (Integer)o;

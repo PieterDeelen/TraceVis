@@ -15,10 +15,6 @@ import java.util.List;
  * @author Pieter Deelen
  */
 public class BinarySearch {
-	public static interface Condition {
-		public boolean isTrue(Object o);
-	}
-
 	public static int search(List list, Condition condition) {
 		if (list.size() == 0) {
 			return -1;

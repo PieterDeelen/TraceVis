@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.Set;
 
 import tracevis.utilities.BinarySearch;
-import tracevis.utilities.BinarySearch.Condition;
+import tracevis.utilities.Condition;
 import edu.uci.ics.jung.graph.Edge;
 
 /**
