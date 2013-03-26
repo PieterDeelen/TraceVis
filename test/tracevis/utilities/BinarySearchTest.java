@@ -26,14 +26,15 @@ public class BinarySearchTest {
 		@Override
 		public boolean isTrue(Object o) {
 			Integer integer = (Integer)o;
-			return integer.intValue() == 1;		
+			return integer.intValue() < 2;		
 		}
 	  };
 	  
 	  Assert.assertEquals(-1, BinarySearch.search(Collections.emptyList(), condition));
-	  Assert.assertEquals(-1, BinarySearch.search(Arrays.asList(0), condition));
+	  Assert.assertEquals(0, BinarySearch.search(Arrays.asList(0), condition));
 	  Assert.assertEquals(0, BinarySearch.search(Arrays.asList(1), condition));	  
 	  Assert.assertEquals(1, BinarySearch.search(Arrays.asList(0, 1), condition));
+	  Assert.assertEquals(1, BinarySearch.search(Arrays.asList(0, 1, 2, 3, 4), condition));
   }
  
 }
