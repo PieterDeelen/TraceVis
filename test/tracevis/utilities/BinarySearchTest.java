@@ -21,6 +21,11 @@ import org.junit.Test;
 public class BinarySearchTest {
 
   @Test
+  public void testConstructor() {
+	  new BinarySearch();
+  }
+	
+  @Test
   public void test() {
 	  Condition condition = new Condition() {		
 		@Override
