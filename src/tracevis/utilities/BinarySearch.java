@@ -15,7 +15,7 @@ import java.util.List;
  * @author Pieter Deelen
  */
 public class BinarySearch {
-	public static int search(List list, Condition condition) {
+	public static int search(List<?> list, Condition condition) {
 		if (list.size() == 0) {
 			return -1;
 		} else if (!condition.isTrue(list.get(0))) {
