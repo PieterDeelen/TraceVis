@@ -8,27 +8,26 @@
 
 package tracevis.utilities.treenode;
 
+import javax.swing.JTree;
+
 /**
- *
+ * 
  * @author Huub van de Wetering
  */
 
-public class TreeNodeRenderer<RenderWidget extends TreeNodeWidget<Value>, Value extends TreeNodeValue> implements javax.swing.tree.TreeCellRenderer {
+public class TreeNodeRenderer<RenderWidget extends TreeNodeWidget<Value>, Value extends TreeNodeValue>
+		implements javax.swing.tree.TreeCellRenderer {
 	private final RenderWidget widget;
 
-    public TreeNodeRenderer(RenderWidget w) {
-        widget =w;
-    }
+	public TreeNodeRenderer(RenderWidget w) {
+		widget = w;
+	}
 
-    @Override
+	@Override
 	public java.awt.Component getTreeCellRendererComponent(
-            javax.swing.JTree tree,
-            Object value,
-            boolean sel,
-            boolean expanded,
-            boolean leaf,
-            int row,
-            boolean hasFocus) {
-        return widget.getTreeCellRenderComponent(tree,value, sel,expanded,leaf,row,hasFocus);
-    }
+			JTree tree, Object value, boolean sel,
+			boolean expanded, boolean leaf, int row, boolean hasFocus) {
+		return widget.getTreeCellRenderComponent(tree, value, sel, expanded,
+				leaf, row, hasFocus);
+	}
 }
