@@ -17,7 +17,6 @@ import java.awt.geom.Point2D;
 
 import javax.swing.SwingUtilities;
 
-import tracevis.model.types.ClassData;
 import tracevis.visualization.utilities.BrushState;
 import edu.uci.ics.jung.graph.Edge;
 import edu.uci.ics.jung.graph.Vertex;
@@ -61,14 +60,13 @@ class CustomGraphMouse implements VisualizationViewer.GraphMouse {
 			Layout layout = viewer.getGraphLayout();
 
 			if (pickSupport != null && pickedState != null && layout != null) {
-				boolean pickedEdge = false;
 				Point2D p = e.getPoint();
 				Point2D ip = viewer.inverseViewTransform(p);
 
 				// Try to pick a vertex first.
 				Vertex v = pickSupport.getVertex(ip.getX(), ip.getY());
 				if (v != null) {
-					ClassData classData = (ClassData)v.getUserDatum("tracevis.model.Program");
+					v.getUserDatum("tracevis.model.Program");
 
 					// The Control key triggers multiple selection.
 					if (e.isControlDown()) {
@@ -105,8 +103,6 @@ class CustomGraphMouse implements VisualizationViewer.GraphMouse {
 							// Select the edge.
 							pickedState.pick(edge, true);
 						}
-
-						pickedEdge = true;
 					} else {
 						// If no vertex or edge was picked, start to drag.
 						structuralView.setCursor(Cursor.getPredefinedCursor(Cursor.MOVE_CURSOR));

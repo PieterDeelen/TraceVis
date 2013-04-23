@@ -233,7 +233,9 @@ public class CustomSpringLayout extends SpringLayout {
 		Iterator iter = getGraph().getVertices().iterator();
 		while (iter.hasNext()) {
 			Vertex v = (Vertex) iter.next();
-			if (dontMove(v)) continue;
+			if (dontMove(v)) {
+				continue;
+			}
 
 			SpringVertexData svd = getSpringData(v);
 			double dx = 0, dy = 0;
@@ -242,11 +244,17 @@ public class CustomSpringLayout extends SpringLayout {
 				Vertex v2 = (Vertex) iter2.next();
 
 				// Don't let the vertex interact with itself.
-				if (v == v2) continue;
+				if (v == v2) {
+					continue;
+				}
 
 				// Connected vertices don't repel each other.
-				if (v.findEdge(v2) != null) continue;
-				if (v2.findEdge(v) != null) continue;
+				if (v.findEdge(v2) != null) {
+					continue;
+				}
+				if (v2.findEdge(v) != null) {
+					continue;
+				}
 
 				double vx = getX(v) - getX(v2);
 				double vy = getY(v) - getY(v2);
@@ -278,7 +286,9 @@ public class CustomSpringLayout extends SpringLayout {
 		Iterator i = getGraph().getVertices().iterator();
 		while (i.hasNext()) {
 			Vertex v = (Vertex) i.next();
-			if (dontMove(v)) continue;
+			if (dontMove(v)) {
+				continue;
+			}
 			SpringVertexData vd = getSpringData(v);
 			Coordinates xyd = getCoordinates(v);
 

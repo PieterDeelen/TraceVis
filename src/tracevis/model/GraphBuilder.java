@@ -25,7 +25,6 @@ import tracevis.model.types.FramePopEvent;
 import tracevis.model.types.MethodEntryEvent;
 import tracevis.model.types.MethodExitEvent;
 import tracevis.model.types.ObjectAllocationEvent;
-
 import edu.uci.ics.jung.graph.Edge;
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.Vertex;

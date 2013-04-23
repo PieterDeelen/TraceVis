@@ -230,9 +230,13 @@ public class Explorer extends javax.swing.JPanel {
             for(int i=0;i<n;i++) {
                 Node child = (Node)root.getChildAt(i);
                 ExplorerValue value = (ExplorerValue)child.getUserObject();
-                if (!value.getText().equals(fullName)) // if child does not match
-                    child = findNode(child,fullName);  // try to find a descendant that matches
-                if (child!=null) return child;
+                if (!value.getText().equals(fullName))
+				 {
+					child = findNode(child,fullName);  // try to find a descendant that matches
+				}
+                if (child!=null) {
+					return child;
+				}
             }
             return null; // we return null, if node is not found
         }
@@ -242,10 +246,11 @@ public class Explorer extends javax.swing.JPanel {
             DefaultMutableTreeNode root = (DefaultMutableTreeNode)model.getRoot();
             ClassData classData = (ClassData)((Vertex)v).getUserDatum("tracevis.model.Program");
             DefaultMutableTreeNode node = findNode(root, classData.getName());
-            if (pick)
-                jTree.getSelectionModel().addSelectionPath(new TreePath(node.getPath()));
-            else
-                jTree.getSelectionModel().removeSelectionPath(new TreePath(node.getPath()));
+            if (pick) {
+				jTree.getSelectionModel().addSelectionPath(new TreePath(node.getPath()));
+			} else {
+				jTree.getSelectionModel().removeSelectionPath(new TreePath(node.getPath()));
+			}
         }
 
         @Override

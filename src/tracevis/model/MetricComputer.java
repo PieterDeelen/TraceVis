@@ -20,7 +20,6 @@ import tracevis.model.types.MethodEntryEvent;
 import tracevis.model.types.MethodExitEvent;
 import tracevis.model.types.ObjectAllocationEvent;
 import tracevis.model.types.ObjectFreeEvent;
-
 import edu.uci.ics.jung.graph.Edge;
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.Vertex;

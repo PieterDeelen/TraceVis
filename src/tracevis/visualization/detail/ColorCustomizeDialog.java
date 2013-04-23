@@ -24,7 +24,6 @@ import javax.swing.JRadioButton;
 import tracevis.model.types.ClassData;
 import tracevis.utilities.StringUtils;
 import tracevis.visualization.utilities.ColorModel;
-import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.Vertex;
 
 
@@ -248,7 +247,7 @@ public class ColorCustomizeDialog extends javax.swing.JDialog {
     // </editor-fold>//GEN-END:initComponents
 
 	private void colorClasses() {
-		Graph callGraph = (Graph)vertex.getGraph();
+		vertex.getGraph();
 
 		String classes = null;
 		Enumeration<AbstractButton> buttons = classButtonGroup.getElements();

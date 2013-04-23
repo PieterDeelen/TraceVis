@@ -304,7 +304,6 @@ public class TimeLineView extends JComponent {
 				}
 
 				if (count > 0) {
-					float alpha = 0.5f;
 					Color source = new Color(0.0f, 0.0f, 0.0f, 0.25f);
 					Color dest = new Color(0.0f, 0.0f, 0.0f, 0.75f);
 					Paint gradient = new GradientPaint(x, (float)y0, source,
@@ -337,7 +336,6 @@ public class TimeLineView extends JComponent {
 				double y0 = TimeLineView.getVertexData(callerVertex).getCenterHeight();
 				double y1 = TimeLineView.getVertexData(calleeVertex).getCenterHeight();
 
-				float alpha = 0.5f;
 				Color source = new Color(0.0f, 0.0f, 0.0f, 0.25f);
 				Color dest = new Color(0.0f, 0.0f, 0.0f, 0.75f);
 				Paint gradient = new GradientPaint((float)x, (float)y0, source,
