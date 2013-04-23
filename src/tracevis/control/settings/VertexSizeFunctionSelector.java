@@ -63,7 +63,7 @@ public class VertexSizeFunctionSelector extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc=" Generated Code ">//GEN-BEGIN:initComponents
     private void initComponents() {
         selectorPanel = new javax.swing.JPanel();
-        functionComboBox = new javax.swing.JComboBox();
+        functionComboBox = new javax.swing.JComboBox<SelectedVertexSizeFunction>();
         settingsPanel = new javax.swing.JPanel();
 
         setLayout(new java.awt.BorderLayout());
@@ -98,7 +98,7 @@ public class VertexSizeFunctionSelector extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox functionComboBox;
+    private javax.swing.JComboBox<SelectedVertexSizeFunction> functionComboBox;
     private javax.swing.JPanel selectorPanel;
     private javax.swing.JPanel settingsPanel;
     // End of variables declaration//GEN-END:variables

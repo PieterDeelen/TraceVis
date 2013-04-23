@@ -42,6 +42,8 @@ public class RendererSettingsDialog extends javax.swing.JDialog {
 				break;
 			case CUSTOM:
 				colorModeCustom.setSelected(true);
+			default:
+				break;
 		}
 
 		switch (rendererSettings.getLabelSettings()) {
