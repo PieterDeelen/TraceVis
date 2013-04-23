@@ -49,7 +49,7 @@ public class ProgramUtilities {
 		for (int i = 0; i < splitIdentifiers.length - 1; i++) {
 			packageIdentifiers.add(splitIdentifiers[i]);
 		}
-	
+
 		return packageIdentifiers;
 	}
 

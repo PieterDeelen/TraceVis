@@ -239,7 +239,7 @@ public class Program implements ProgramInterface, ProgramEventInterface {
 	public void addListener(ProgramListener listener) {
 		listeners.add(listener);
 	}
-	
+
 	public void removeListener(ProgramListener listener) {
 		listeners.remove(listener);
 	}

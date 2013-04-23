@@ -27,9 +27,6 @@ import edu.uci.ics.jung.graph.Vertex;
  * @author  Pieter Deelen
  */
 public class EdgePanel extends javax.swing.JPanel {
-	private final ProgramInterface program;
-
-	private final DirectedEdge edge;
 	private final CallData callData;
 	private final ClassData sourceClassData;
 	private final ClassData destClassData;
@@ -69,9 +66,6 @@ public class EdgePanel extends javax.swing.JPanel {
 	 * @param edge the edge to visualize.
 	 */
 	public EdgePanel(ProgramInterface program, DirectedEdge edge) {
-		this.program = program;
-		this.edge = edge;
-
 		callData = (CallData)edge.getUserDatum("tracevis.model.Program");
 
 		Vertex sourceVertex = edge.getSource();

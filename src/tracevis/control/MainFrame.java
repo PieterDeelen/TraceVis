@@ -48,9 +48,6 @@ public class MainFrame extends JFrame implements ProgramListener {
 	private final LoadAction loadAction;
 	private final GenerateAction generateAction;
 
-	private final int classCount;
-	private final int callCount;
-
 	private final AboutDialog aboutDialog;
 
 	/**
@@ -91,9 +88,6 @@ public class MainFrame extends JFrame implements ProgramListener {
 		defaultOptions = new ProgramOptions("","","","", classPath,
 		                                    exclusionPatterns,
 			                                inclusionPatterns, false);
-
-		classCount = 0;
-		callCount = 0;
 	}
 
 	/** This method is called from within the constructor to
