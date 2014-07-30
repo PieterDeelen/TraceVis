@@ -11,6 +11,7 @@ package tracevis.visualization.structure;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Font;
 import java.awt.GradientPaint;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -534,9 +535,10 @@ public class CustomRenderer extends PluggableRenderer {
 
 		@Override
 		public Component getGraphLabelRendererComponent(JComponent vv, Object value,
-			boolean isSelected, Vertex vertex)
+			Font font, boolean isSelected, Vertex vertex)
 		{
 			super.setForeground(vertexLabelColor);
+			super.setFont(font);
 			setIcon(null);
 			setBorder(noFocusBorder);
 			setValue(value);
