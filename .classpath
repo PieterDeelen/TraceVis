@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="test/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
 	<classpathentry kind="lib" path="libs/colt.jar"/>
 	<classpathentry kind="lib" path="libs/hamcrest-core-1.3.jar"/>
 	<classpathentry kind="lib" path="libs/jakarta-commons-collections-3.1.jar"/>
